@@ -17,9 +17,9 @@ const fallbackCareRecords = [
 const defaultSettings = {
   rayneoBound: false,
   cloudApi: false,
-  dataSync: "Wi-Fi",
+  dataSync: "演示模式",
   localStorage: true,
-  cloudStorage: "structured_summary",
+  cloudStorage: "off",
   videoSaved: false,
   audioSaved: false,
   privacyConsent: false
@@ -478,7 +478,7 @@ async function openProfileEditor() {
     <div class="modal-head">
       <div>
         <h2>编辑${escapeHtml(pet.name)}的档案</h2>
-        <p>每行一个标签，保存后会写回长期记忆里的宠物档案。</p>
+        <p>${window.PETMIRROR_PUBLIC_DEMO ? "在线演示仅更新当前会话，刷新后重置。" : "每行一个标签，保存后会写回长期记忆里的宠物档案。"}</p>
       </div>
       <button class="icon-button" type="button" data-close-modal aria-label="关闭">×</button>
     </div>
@@ -529,7 +529,7 @@ async function openProfileEditor() {
       }
       closeModal();
       render();
-      showToast("档案已保存");
+      showToast(window.PETMIRROR_PUBLIC_DEMO ? "当前会话已更新，刷新后重置" : "档案已保存");
     } catch (error) {
       showToast(`保存失败：${error.message || "请稍后重试"}`);
     }
@@ -544,7 +544,7 @@ async function addDemoLog() {
     <div class="modal-head">
       <div>
         <h2>新增${escapeHtml(pet.name)}的照护记录</h2>
-        <p>这条记录会进入今日照护记录，可手动固化为长期照护记录。</p>
+        <p>${window.PETMIRROR_PUBLIC_DEMO ? "在线演示仅保存在当前会话，刷新后重置。" : "这条记录会进入今日照护记录，可手动固化为长期照护记录。"}</p>
       </div>
       <button class="icon-button" type="button" data-close-modal aria-label="关闭">×</button>
     </div>
@@ -601,7 +601,7 @@ async function saveManualLog(record) {
       render();
     }
     closeModal();
-    showToast("已新增一条照护记录");
+    showToast(window.PETMIRROR_PUBLIC_DEMO ? "演示记录已加入当前会话" : "已新增一条照护记录");
   } catch (error) {
     showToast(`新增失败：${error.message || "请稍后重试"}`);
   }
