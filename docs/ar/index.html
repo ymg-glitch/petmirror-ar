@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10251e">
+  <meta name="description" content="猫犬魔镜 AR 眼镜端双目提示模拟：查看低遮挡的两行照护建议。">
+  <title>AR 眼镜端模拟 · 猫犬魔镜</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <header class="topbar"><a class="brand" href="../index.html">◈ <span>猫犬魔镜</span></a><span class="top-label">AR DISPLAY REPLAY</span><a class="back" href="../index.html">返回项目总览 ↗</a></header>
+  <main>
+    <section class="intro"><p class="eyebrow">双目提示 · 浏览器回放</p><h1>眼镜里，<em>只留下当下有用的两句话。</em></h1><p>基于 Android 显示原型的交互示意：两眼同步、提示集中在左侧，避免把长解释挡在真实视野前。按下方按钮模拟切换场景。</p><div class="notice"><strong>非真机演示</strong> 这里没有调用眼镜摄像头、麦克风或 AI。文字为虚构的预录场景；真实 RayNeo 佩戴效果与延迟尚未实测。</div></section>
+    <section class="viewer" aria-label="双目 AR 视场模拟">
+      <div class="viewer-top"><span><i></i> 双目显示模拟</span><span id="case-name">食盆旁犹豫</span><span id="case-count">1 / 3</span></div>
+      <div class="eyes">
+        <div class="eye" data-eye="left"><span class="eye-label">左眼</span><div class="room"><span class="pet-symbol" aria-hidden="true">🐈</span><div class="floor"></div></div><div class="prompt"><span class="prompt-caption">示例猫 A · 离线演示</span><strong class="status">食盆旁犹豫</strong><span class="action">少打扰，再观察</span></div></div>
+        <div class="eye" data-eye="right"><span class="eye-label">右眼</span><div class="room"><span class="pet-symbol" aria-hidden="true">🐈</span><div class="floor"></div></div><div class="prompt"><span class="prompt-caption">示例猫 A · 离线演示</span><strong class="status">食盆旁犹豫</strong><span class="action">少打扰，再观察</span></div></div>
+      </div>
+      <div class="viewer-bottom"><span>左侧低遮挡区域</span><span>状态短语 ＋ 行动建议</span><span>文字随场景同步切换</span></div>
+    </section>
+    <section class="controls"><div class="control-title"><p class="eyebrow">INTERACTION</p><h2>切换演示场景</h2><p>“前滑／后滑”对应 Android 原型中的镜腿切换；也可开启自动轮播。</p></div><div class="control-row"><button type="button" id="prev" aria-label="上一条场景">← 上一条</button><button type="button" id="next" class="primary" aria-label="下一条场景">下一条 →</button><button type="button" id="auto" aria-pressed="false">自动轮播：关</button></div><div class="scenario-tabs" role="group" aria-label="直接选择场景"><button type="button" data-case="0" aria-pressed="true">01 食盆旁犹豫</button><button type="button" data-case="1" aria-pressed="false">02 躲着观察</button><button type="button" data-case="2" aria-pressed="false">03 户外警觉</button></div><p class="case-detail" id="case-detail">观察到靠近食盆但进食不积极；单次画面只适合给保守提醒。</p></section>
+    <section class="details"><div><p class="eyebrow">WHAT EXISTS</p><h2>已实现的显示路径</h2><p>Android 原型使用 MercurySDK 构建双目界面；后端提供 <code>statusLine</code> 与 <code>actionLine</code>，AR 端读取后映射到显示字段。基础界面曾在 Android 模拟器中运行。</p></div><div><p class="eyebrow">NEXT VALIDATION</p><h2>真机仍需验证</h2><p>摄像头连续采集、声音输入、网络失败处理、文字可读性、佩戴遮挡和端到端延迟，都要在真实 RayNeo 设备上测。浏览器回放不能替代这些证据。</p></div></section>
+    <section class="links"><a href="../mobile/">体验手机 H5 ↗</a><a href="https://github.com/ymg-glitch/petmirror-ar/tree/main/android-ar">查看 Android 源码 ↗</a><a href="../index.html">返回项目总览 ↗</a></section>
+  </main>
+  <footer>PetMirror AR · 公开演示使用虚构宠物与预录文案</footer>
+</body>
+</html>
+
