@@ -6,6 +6,8 @@
 
 **[在线体验样例回放](https://ymg-glitch.github.io/petmirror-ar/)** · [系统架构](./ARCHITECTURE.md) · [评测说明](./EVALUATION.md)
 
+现场展示可参考[本地投屏说明](./LOCAL_DEMO.md)，Windows 可使用 `start-local-demo.cmd` 启动后端与 H5。
+
 ![猫犬魔镜在线展示页预览](./docs/preview.svg)
 
 在线页是静态交互展示，**不调用摄像头、麦克风或在线 AI**。本地后端可运行；未配置云端模型时会使用明确标记的 mock 推理。
@@ -86,3 +88,4 @@ LICENSE
 ## 许可
 
 本仓库原创代码与文档使用 [MIT License](./LICENSE)。第三方组件和素材遵循各自许可，不包含在该授权中。
+
