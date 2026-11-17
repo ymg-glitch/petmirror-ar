@@ -800,4 +800,5 @@ html,body{max-width:100%;overflow-x:hidden}
 .hero-lead,.hero-note{max-width:400px;overflow-wrap:anywhere}
 }
 .phone-caption a{color:#167858;font-weight:800;text-decoration:underline;text-underline-offset:3px}
+.section-heading>p a{color:#167858;font-weight:800;text-decoration:underline;text-underline-offset:3px}
 
