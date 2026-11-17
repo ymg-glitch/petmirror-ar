@@ -78,7 +78,14 @@ color:var(--green)}
 .header-link{
 font-size:14px;
 font-weight:700;
-white-space:nowrap}
+white-space:nowrap;
+display:inline-flex;
+align-items:center;
+padding:8px 14px;
+border-radius:10px;
+background:#dff1e7;
+color:#146440;
+border:1px solid #b9e1c7}
 .hero{
 min-height:640px;
 display:grid;
@@ -786,7 +793,7 @@ font-size:62px}
 @media(max-width:760px){
 html,body{max-width:100%;overflow-x:hidden}
 .site-header{gap:8px}
-.header-link{display:none}
+.header-link{display:inline-flex;padding:7px 9px;font-size:11px}
 .hero{grid-template-columns:minmax(0,1fr)}
 .hero-copy,.hero-visual{min-width:0;width:100%}
 .hero-visual{max-width:430px}
