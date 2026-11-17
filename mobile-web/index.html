@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>猫犬魔镜</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="phone-shell" aria-label="猫犬魔镜手机端 Demo">
+      <header class="app-header">
+        <div>
+          <p class="eyebrow">PetMirror</p>
+          <h1>猫犬魔镜</h1>
+          <p class="subtitle">宠物长期记忆窗口</p>
+        </div>
+        <div class="header-status" aria-label="系统状态">
+          <span id="backend-status">后端连接中</span>
+          <span id="rayneo-status">RayNeo 已绑定</span>
+          <span id="storage-status">视频不保存</span>
+        </div>
+      </header>
+
+      <section id="toast" class="toast" aria-live="polite" aria-atomic="true"></section>
+      <section id="content" class="content" aria-live="polite"></section>
+
+      <nav class="tab-bar" aria-label="底部导航">
+        <button class="tab-button active" type="button" data-view="home" aria-label="首页">
+          <span class="tab-icon">⌂</span>
+          <span>首页</span>
+        </button>
+        <button class="tab-button" type="button" data-view="profile" aria-label="档案">
+          <span class="tab-icon">◷</span>
+          <span>档案</span>
+        </button>
+        <button class="tab-button" type="button" data-view="logs" aria-label="记录">
+          <span class="tab-icon">▦</span>
+          <span>记录</span>
+        </button>
+        <button class="tab-button" type="button" data-view="settings" aria-label="设置">
+          <span class="tab-icon">⚙</span>
+          <span>设置</span>
+        </button>
+      </nav>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

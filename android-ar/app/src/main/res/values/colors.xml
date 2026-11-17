@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="pet_bg">#050B0A</color>
+    <color name="pet_panel">#33111F1A</color>
+    <color name="pet_panel_strong">#5520463A</color>
+    <color name="pet_green">#4DFF9A</color>
+    <color name="pet_green_dim">#9DDDBB</color>
+    <color name="pet_yellow">#FFE18A</color>
+    <color name="pet_red">#FF8D8D</color>
+    <color name="pet_white">#F4FFF8</color>
+    <color name="pet_muted">#A7B8AE</color>
+</resources>

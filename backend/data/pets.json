@@ -1,0 +1,105 @@
+{
+  "activePetId": "huajuan",
+  "pets": [
+    {
+      "id": "huajuan",
+      "name": "花卷",
+      "species": "cat",
+      "breed": "中华田园猫",
+      "age": "2岁",
+      "sex": "母",
+      "weight": "4.2kg",
+      "avatar": "花",
+      "memorial": false,
+      "profile": {
+        "personality": [
+          "谨慎",
+          "亲人",
+          "换粮敏感"
+        ],
+        "preferences": [
+          "鸡肉味猫粮",
+          "湿粮",
+          "轻声呼唤"
+        ],
+        "taboos": [
+          "海鱼味猫粮",
+          "吹风机",
+          "乳糖"
+        ],
+        "behaviorPatterns": [
+          "拒食时可能在食盆旁出现扒拉或掩埋动作",
+          "陌生声音靠近时容易后退"
+        ],
+        "confirmedTags": [
+          {
+            "field": "preferences",
+            "value": "鸡肉味猫粮",
+            "confirmedAt": "2026-06-09T05:35:25.171Z"
+          }
+        ]
+      }
+    },
+    {
+      "id": "kele",
+      "name": "可乐",
+      "species": "dog",
+      "breed": "柯基",
+      "age": "4岁",
+      "sex": "公",
+      "weight": "11.6kg",
+      "avatar": "可",
+      "memorial": false,
+      "profile": {
+        "personality": [
+          "活跃",
+          "亲人",
+          "雨天焦虑"
+        ],
+        "preferences": [
+          "散步",
+          "牛肉味零食",
+          "清晰口令"
+        ],
+        "taboos": [
+          "剪指甲",
+          "雷雨声"
+        ],
+        "behaviorPatterns": [
+          "听到雷雨声后可能靠近沙发角落",
+          "饭后需要短时间散步消耗精力"
+        ]
+      }
+    },
+    {
+      "id": "tuanzi",
+      "name": "团子",
+      "species": "cat",
+      "breed": "橘猫",
+      "age": "8岁",
+      "sex": "公",
+      "weight": "5.1kg",
+      "avatar": "团",
+      "memorial": true,
+      "profile": {
+        "personality": [
+          "安静",
+          "喜欢晒太阳",
+          "被轻声呼唤时放松"
+        ],
+        "preferences": [
+          "鸡肉味零食",
+          "窗边",
+          "午后阳光"
+        ],
+        "taboos": [
+          "吹风机"
+        ],
+        "behaviorPatterns": [
+          "喜欢在窗边停留",
+          "被轻声呼唤时会主动靠近"
+        ]
+      }
+    }
+  ]
+}

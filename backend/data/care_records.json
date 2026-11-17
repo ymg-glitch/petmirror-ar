@@ -1,0 +1,79 @@
+{
+  "records": [
+    {
+      "id": "care_huajuan_2026-06-18_daily",
+      "petId": "huajuan",
+      "date": "2026-06-18",
+      "type": "daily_summary",
+      "title": "花卷 2026-06-18 每日照护摘要",
+      "summary": "早餐后状态观察：花卷闻了鸡肉味猫粮后正常进食，饭后在窗边休息。",
+      "source": "daily_finalized",
+      "importance": "low",
+      "tags": [
+        "早餐",
+        "鸡肉味",
+        "进食正常"
+      ],
+      "createdAt": "2026-06-18T05:50:59.383Z"
+    },
+    {
+      "id": "care_huajuan_20260508_food",
+      "petId": "huajuan",
+      "date": "2026-05-08",
+      "type": "feeding",
+      "title": "换海鱼味猫粮后拒食",
+      "summary": "花卷闻了海鱼味猫粮但没有明显进食，并在食盆旁出现扒拉动作。",
+      "source": "manual",
+      "importance": "high",
+      "tags": [
+        "换粮",
+        "拒食",
+        "海鱼味",
+        "扒拉"
+      ]
+    },
+    {
+      "id": "care_huajuan_20260510_food",
+      "petId": "huajuan",
+      "date": "2026-05-10",
+      "type": "feeding",
+      "title": "鸡肉味猫粮进食正常",
+      "summary": "花卷更换为鸡肉味猫粮后进食情况恢复正常。",
+      "source": "manual",
+      "importance": "medium",
+      "tags": [
+        "鸡肉味",
+        "进食正常"
+      ]
+    },
+    {
+      "id": "care_kele_20260511_rain",
+      "petId": "kele",
+      "date": "2026-05-11",
+      "type": "emotion",
+      "title": "雨声后焦虑",
+      "summary": "可乐听到较大的雨声后靠近沙发角落，呼吸略快。",
+      "source": "manual",
+      "importance": "medium",
+      "tags": [
+        "雨声",
+        "焦虑",
+        "躲避"
+      ]
+    },
+    {
+      "id": "care_tuanzi_20240508_home",
+      "petId": "tuanzi",
+      "date": "2024-05-08",
+      "type": "memorial",
+      "title": "第一次到家",
+      "summary": "团子适应新环境用了三天，之后开始主动靠近家人。",
+      "source": "manual",
+      "importance": "high",
+      "tags": [
+        "纪念记录",
+        "适应"
+      ]
+    }
+  ]
+}

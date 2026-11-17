@@ -1,0 +1,67 @@
+{
+  "caseCount": 30,
+  "metrics": [
+    "A1",
+    "A2",
+    "A3",
+    "A4",
+    "B1",
+    "B2",
+    "B3",
+    "D1",
+    "D2",
+    "D3",
+    "D4",
+    "E1",
+    "E2",
+    "E3",
+    "F1",
+    "F2",
+    "F3"
+  ],
+  "groupAvg": {
+    "A": 4.96,
+    "B": 4.92,
+    "D": 4.89,
+    "E": 4.93,
+    "F": 4.97
+  },
+  "overallAvg": 4.93,
+  "lowScores": [
+    {
+      "caseId": "01",
+      "metric": "B1",
+      "score": 3
+    },
+    {
+      "caseId": "01",
+      "metric": "B2",
+      "score": 3
+    },
+    {
+      "caseId": "05",
+      "metric": "F3",
+      "score": 2
+    },
+    {
+      "caseId": "11",
+      "metric": "D1",
+      "score": 3
+    },
+    {
+      "caseId": "12",
+      "metric": "D1",
+      "score": 3
+    },
+    {
+      "caseId": "14",
+      "metric": "D1",
+      "score": 3
+    },
+    {
+      "caseId": "15",
+      "metric": "D1",
+      "score": 3
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "petmirror-unified-backend",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs",
+    "demo:analyze": "node scripts/demo-analyze.mjs",
+    "demo:real-image": "node scripts/demo-ar-pipeline-real-image.mjs",
+    "test:pipeline": "node scripts/run-pipeline-smoke-test.mjs",
+    "eval:cases": "node scripts/run-ai-eval-cases.mjs"
+  }
+}

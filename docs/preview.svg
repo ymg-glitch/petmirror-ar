@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="猫犬魔镜 PetMirror AR 展示图">
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#102a22"/><stop offset="1" stop-color="#1c4b37"/></linearGradient><linearGradient id="fur" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e3b389"/><stop offset="1" stop-color="#aa7454"/></linearGradient></defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <g opacity=".1" stroke="#d6f6dd"><path d="M0 70H1200M0 140H1200M0 210H1200M0 280H1200M0 350H1200M0 420H1200M0 490H1200M0 560H1200"/><path d="M70 0V630M140 0V630M210 0V630M280 0V630M350 0V630M420 0V630M490 0V630M560 0V630M630 0V630M700 0V630M770 0V630M840 0V630M910 0V630M980 0V630M1050 0V630M1120 0V630"/></g>
+  <rect x="58" y="52" width="46" height="46" rx="13" fill="#b7ecc6"/><text x="81" y="84" font-family="Arial,sans-serif" text-anchor="middle" font-size="32" fill="#123d2b">◈</text>
+  <text x="120" y="82" font-family="Arial,'Microsoft YaHei',sans-serif" font-size="29" font-weight="700" fill="#f5fff6">PetMirror <tspan font-size="20">猫犬魔镜</tspan></text>
+  <text x="66" y="195" font-family="Arial,'Microsoft YaHei',sans-serif" font-size="15" font-weight="700" letter-spacing="4" fill="#91d9aa">新手养宠 · AR 照护提示原型</text>
+  <text x="58" y="288" font-family="Arial,'Microsoft YaHei',sans-serif" font-size="60" font-weight="700" fill="#ffffff">看见它的状态。</text>
+  <text x="58" y="371" font-family="Arial,'Microsoft YaHei',sans-serif" font-size="60" font-weight="700" fill="#a8edbd">知道此刻怎么做。</text>
+  <text x="65" y="439" font-family="Arial,'Microsoft YaHei',sans-serif" font-size="21" fill="#d6e9dc">AR 两行提示 · 手机长期记忆 · 后端记录写回</text>
+  <rect x="65" y="493" width="384" height="59" rx="15" fill="#b7ecc6"/><text x="257" y="532" font-family="Arial,'Microsoft YaHei',sans-serif" text-anchor="middle" font-size="20" font-weight="700" fill="#143d2b">30 图人工评测  4.93 / 5</text>
+  <rect x="700" y="65" width="435" height="500" rx="29" fill="#294c3a" stroke="#80ae88" stroke-width="2"/>
+  <path d="M785 256L770 154Q770 137 788 146L846 194Q913 172 975 194L1033 146Q1052 137 1050 156L1038 255Q1080 309 1060 386Q1045 462 917 466Q790 462 774 385Q755 309 785 256Z" fill="url(#fur)"/>
+  <path d="M810 208L808 250L847 222ZM1012 208L1014 250L975 222Z" fill="#dd9e94"/><path d="M842 320Q865 303 887 320M945 320Q969 303 991 320" fill="none" stroke="#5a4035" stroke-width="9" stroke-linecap="round"/><path d="M899 350Q916 366 934 350" fill="#6b4940"/>
+  <rect x="728" y="372" width="371" height="145" rx="18" fill="#10291f" fill-opacity=".94" stroke="#74d696" stroke-width="2"/><text x="753" y="405" font-family="Arial,'Microsoft YaHei',sans-serif" font-size="14" fill="#9ad3ac">观察中 · 示例猫 A</text><text x="753" y="458" font-family="Arial,'Microsoft YaHei',sans-serif" font-size="31" font-weight="700" fill="#f8fff8">食盆旁犹豫</text><text x="753" y="491" font-family="Arial,'Microsoft YaHei',sans-serif" font-size="21" fill="#c6eed0">少打扰，再观察</text>
+  <text x="1125" y="596" text-anchor="end" font-family="Arial,'Microsoft YaHei',sans-serif" font-size="14" fill="#a8c6af">样例回放 · 非实时模型调用</text>
+</svg>
