@@ -4,13 +4,15 @@
 
 > 南京大学 2026 OpenClaw 应用创新大赛二等奖项目。比赛平台在开发期间无法正常执行指令，经主办方允许后，原型主要借助其他 AI Agent 工具在本地完成。此仓库不依赖 OpenClaw 运行时。
 
-**[在线体验样例回放](https://ymg-glitch.github.io/petmirror-ar/)** · [系统架构](./ARCHITECTURE.md) · [评测说明](./EVALUATION.md)
+**[在线体验样例回放](https://ymg-glitch.github.io/petmirror-ar/)** · **[打开手机 H5 演示](https://ymg-glitch.github.io/petmirror-ar/mobile/)** · [系统架构](./ARCHITECTURE.md) · [评测说明](./EVALUATION.md)
 
 现场展示可参考[本地投屏说明](./LOCAL_DEMO.md)，Windows 可使用 `start-local-demo.cmd` 启动后端与 H5。
 
 ![猫犬魔镜在线展示页预览](./docs/preview.svg)
 
 在线页是静态交互展示，**不调用摄像头、麦克风或在线 AI**。本地后端可运行；未配置云端模型时会使用明确标记的 mock 推理。
+
+[手机 H5 在线版](https://ymg-glitch.github.io/petmirror-ar/mobile/)复用实际 H5 页面代码，使用虚构数据；切换和编辑只保留在当前浏览器会话，刷新即重置。需要持久化和后端接口时请按下文在本地运行。
 
 仓库中的宠物名称、体重、行为、纪念档案和照护记录均为**虚构演示数据**，不对应真实宠物或主人。在线页另用简化样例回放展示交互。
 
