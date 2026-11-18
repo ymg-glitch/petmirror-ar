@@ -678,28 +678,17 @@ margin-top:22px;
 background:#fff;
 border:1px solid #e2e8de;
 border-radius:20px;
-padding:24px 28px;
-display:flex;
-justify-content:space-between;
-align-items:end;
-gap:20px}
-.bad-case span{
-font-size:11px;
-color:#cd7953;
-font-weight:800}
-.bad-case h3{
-font-size:21px;
-margin:5px 0}
-.bad-case p{
-color:#6b7c70;
-font-size:13px;
-margin:0;
-max-width:780px}
-.bad-case a{
-font-size:12px;
-color:#1b7e53;
-font-weight:800;
-white-space:nowrap}
+padding:0 28px}
+.bad-case summary{
+cursor:pointer;
+padding:20px 0;
+font-size:14px;
+font-weight:750;
+color:#3c594a}
+.bad-case summary span{float:right;color:#1b7e53;font-size:12px}
+.bad-case-content{border-top:1px solid #e2e8de;padding:18px 0 22px}
+.bad-case-content p{color:#6b7c70;font-size:13px;margin:0 0 10px;max-width:780px}
+.bad-case-content a{font-size:12px;color:#1b7e53;font-weight:800}
 .scope{
 background:#f2f5ef}
 .scope-grid{
