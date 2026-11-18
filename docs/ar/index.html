@@ -4,18 +4,25 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#10251e">
-  <meta name="description" content="猫犬魔镜眼镜端：查看 Android Studio 双目原型开发截图和可交互的浏览器回放。">
-  <title>Android 眼镜端原型 · 猫犬魔镜</title>
-  <link rel="stylesheet" href="./styles.css?v=20261118a">
+  <meta name="description" content="猫犬魔镜 AR 眼镜端：为养宠新手在照护现场呈现简短的状态与行动提示。体验双目场景回放，查看 Android 原型证据。">
+  <title>猫犬魔镜 · AR 眼镜端照护提示</title>
+  <link rel="stylesheet" href="./styles.css?v=20261118b">
   <script src="./app.js?v=20261118a" defer></script>
 </head>
 <body>
-  <header class="topbar"><a class="brand" href="../index.html">◈ <span>猫犬魔镜</span></a><span class="top-label">ANDROID PROTOTYPE / WEB REPLAY</span><a class="back" href="../index.html">返回项目总览 ↗</a></header>
+  <header class="topbar"><a class="brand" href="../index.html">◈ <span>猫犬魔镜</span></a><span class="top-label">AR 照护提示 · 眼镜端体验</span><a class="back" href="../index.html">返回项目总览 ↗</a></header>
   <main>
     <section class="intro">
-      <div class="intro-copy"><p class="eyebrow">ANDROID STUDIO → BROWSER REPLAY</p><h1>先有 Android 双目原型<br><em>再用网页回放交互</em></h1><p>赛期在 Android Studio 中搭建眼镜端显示界面，并在 Pixel 7 模拟器运行。左右眼同步显示状态和建议，镜腿操作可切换内容；下方网页将这套交互变成可直接体验的回放。</p><div class="intro-actions"><a class="primary-link" href="#viewer">体验双目回放 ↓</a><a href="https://github.com/ymg-glitch/petmirror-ar/tree/main/android-ar">查看 Android 工程 ↗</a></div><p class="intro-footnote">网页画面使用 AI 生成的场景图和虚构的预录提示，不是眼镜真机采集画面。</p></div>
-      <figure class="studio-proof"><div class="studio-proof-top"><span><i></i> Android Studio · Pixel 7 模拟器</span><span>赛期开发截图</span></div><a href="../android-studio-proof.svg" target="_blank" rel="noopener" aria-label="放大查看 Android Studio 双目原型开发截图"><img src="../android-studio-proof.svg" alt="Android Studio 中的 Pixel 7 模拟器运行猫犬魔镜双目界面" loading="eager"></a><figcaption>实际开发截图 · <a href="https://github.com/ymg-glitch/petmirror-ar/blob/main/android-ar/app/src/main/java/com/petmirror/ar/MainActivity.kt">核对 MainActivity.kt ↗</a></figcaption></figure>
+      <div class="intro-copy">
+        <p class="eyebrow">PETMIRROR AR · 眼镜端</p>
+        <h1>照顾宠物时<br><em>提醒就在眼前</em></h1>
+        <p>猫犬魔镜面向养宠新手。在这个原型里，眼镜端用两行文字呈现宠物的可观察状态和下一步照护建议，让主人在现场先知道该看什么、怎么做；档案和照护记录留到手机端回看。</p>
+        <div class="intro-points"><span>第一视角</span><span>双目低遮挡</span><span>状态＋下一步动作</span></div>
+        <div class="intro-actions"><a class="primary-link" href="#viewer">体验眼镜端回放 ↓</a><a href="#android-proof">查看 Android 原型 ↗</a></div>
+      </div>
+      <figure class="product-visual" aria-label="猫犬魔镜眼镜端提示的第一视角示意"><div class="product-visual-top"><span><i></i> 第一视角示意</span><span>食盆场景</span></div><div class="product-prompt"><small>示例猫 A · 状态提示</small><strong>食盆旁犹豫</strong><span>少打扰，再观察</span></div><figcaption>虚构场景图 · 提示排版示意</figcaption></figure>
     </section>
+    <section class="experience-heading"><p class="eyebrow">IN THE MOMENT</p><h2>眼镜里会看到什么</h2><p>选择一个场景，看看第一视角画面、状态短句和行动提示如何一起切换。这里使用预录文案展示交互形式。</p></section>
     <section class="viewer" id="viewer" data-case="0" aria-label="双目 AR 视场回放">
       <div class="viewer-top"><span><i></i> 浏览器双目回放</span><span id="case-name">食盆旁犹豫</span><span id="case-count">1 / 3</span></div>
       <div class="eyes">
@@ -24,9 +31,10 @@
       </div>
       <div class="viewer-bottom"><span>左侧低遮挡区域</span><span>状态短语 ＋ 行动建议</span><span>文字随场景同步切换</span></div>
     </section>
-    <section class="controls"><div class="control-title"><p class="eyebrow">INTERACTION</p><h2>切换演示场景</h2><p>“前滑／后滑”对应 Android 原型中的镜腿切换；也可开启自动轮播。</p></div><div class="control-row"><button type="button" id="prev" aria-label="上一条场景">← 上一条</button><button type="button" id="next" class="primary" aria-label="下一条场景">下一条 →</button><button type="button" id="auto" aria-pressed="false">自动轮播：关</button></div><div class="scenario-tabs" role="group" aria-label="直接选择场景"><button type="button" data-case="0" aria-pressed="true">01 食盆旁犹豫</button><button type="button" data-case="1" aria-pressed="false">02 躲着观察</button><button type="button" data-case="2" aria-pressed="false">03 户外警觉</button></div><p class="case-detail" id="case-detail">观察到靠近食盆但进食不积极；单次画面只适合给保守提醒。</p></section>
-    <section class="details"><div><p class="eyebrow">SOURCE CODE</p><h2>网页背后的 Android 工程</h2><p><a href="https://github.com/ymg-glitch/petmirror-ar/blob/main/android-ar/app/src/main/java/com/petmirror/ar/MainActivity.kt">MainActivity.kt ↗</a> 使用双目绑定更新提示，并处理镜腿点击与前后滑动。<a href="https://github.com/ymg-glitch/petmirror-ar/blob/main/android-ar/app/src/main/java/com/petmirror/ar/PetStatusRemoteDataSource.kt">PetStatusRemoteDataSource.kt ↗</a> 读取后端的状态短句与行动建议。模拟器截图对应的是显示端开发记录。</p></div><div><p class="eyebrow">DISPLAY DESIGN</p><h2>现场看两行，细节留给手机</h2><p>双目画面把状态与下一步动作放在低遮挡区域。需要回看和编辑的宠物档案、照护时间线放在<a href="../mobile/">手机 H5 ↗</a>；网页回放用于展示这两个界面的分工。</p></div></section>
-    <section class="links"><a href="../mobile/">体验手机 H5 ↗</a><a href="https://github.com/ymg-glitch/petmirror-ar/tree/main/android-ar">查看 Android 源码 ↗</a><a href="../index.html">返回项目总览 ↗</a></section>
+    <section class="controls"><div class="control-title"><p class="eyebrow">INTERACTION</p><h2>试试切换场景</h2><p>画面与两行提示同步切换。网页里的按钮对应 Android 原型中镜腿前后滑动的内容切换。</p></div><div class="control-row"><button type="button" id="prev" aria-label="上一条场景">← 上一条</button><button type="button" id="next" class="primary" aria-label="下一条场景">下一条 →</button><button type="button" id="auto" aria-pressed="false">自动轮播：关</button></div><div class="scenario-tabs" role="group" aria-label="直接选择场景"><button type="button" data-case="0" aria-pressed="true">01 食盆旁犹豫</button><button type="button" data-case="1" aria-pressed="false">02 躲着观察</button><button type="button" data-case="2" aria-pressed="false">03 户外警觉</button></div><p class="case-detail" id="case-detail">示意场景：猫在食盆旁停留；单张画面只适合给保守提醒。</p><p class="replay-note">画面为 AI 生成的虚构场景，提示为预录示例；本页不调用摄像头、麦克风或在线 AI。</p></section>
+    <section class="prototype-proof" id="android-proof"><div class="proof-heading"><p class="eyebrow">ANDROID PROTOTYPE</p><h2>赛期 Android Studio 显示原型</h2><p>网页回放方便现场展示；项目还保留了 Android 显示端工程。赛期开发截图显示，双目提示界面曾在 Pixel 7 模拟器运行。</p></div><div class="proof-layout"><figure class="studio-proof"><div class="studio-proof-top"><span><i></i> Android Studio · Pixel 7 模拟器</span><span>赛期开发截图</span></div><a href="../android-studio-proof.svg" target="_blank" rel="noopener" aria-label="放大查看 Android Studio 双目原型开发截图"><img src="../android-studio-proof.svg" alt="Android Studio 中的 Pixel 7 模拟器运行猫犬魔镜双目界面" loading="lazy"></a><figcaption>点击放大查看原始开发截图</figcaption></figure><div class="proof-details"><h3>源码能核对什么</h3><ul><li><strong>双目显示</strong><span>左右眼状态卡片同步更新。</span></li><li><strong>镜腿交互</strong><span>点击查看建议，前后滑动切换内容。</span></li><li><strong>后端读取</strong><span>读取状态短句与行动建议并映射到显示字段。</span></li></ul><div class="proof-actions"><a href="https://github.com/ymg-glitch/petmirror-ar/blob/main/android-ar/app/src/main/java/com/petmirror/ar/MainActivity.kt">查看显示与交互代码 ↗</a><a href="https://github.com/ymg-glitch/petmirror-ar/blob/main/android-ar/app/src/main/java/com/petmirror/ar/PetStatusRemoteDataSource.kt">查看后端读取代码 ↗</a></div><small>截图为 Android 模拟器运行记录；网页回放不是设备实拍。</small></div></div></section>
+    <section class="details" aria-label="眼镜端与手机端分工"><div><p class="eyebrow">GLASSES</p><h2>眼镜端负责当下</h2><p>把状态短句和下一步动作放在低遮挡区域，让主人面对宠物时能快速读完，不必在视野里看长段解释。</p></div><div><p class="eyebrow">PHONE</p><h2>手机端负责回看</h2><p>宠物档案、照护时间线和记录编辑留在<a href="../mobile/">手机 H5 ↗</a>，适合照护结束后再查看和整理。</p></div></section>
+    <section class="links"><a href="../mobile/">体验手机 H5 ↗</a><a href="https://github.com/ymg-glitch/petmirror-ar/tree/main/android-ar">查看 Android 工程 ↗</a><a href="../index.html">返回项目总览 ↗</a></section>
   </main>
   <footer>PetMirror AR · 公开演示使用虚构宠物与预录文案</footer>
 </body>
