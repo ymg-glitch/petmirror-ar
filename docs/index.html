@@ -13,17 +13,17 @@
   <a class="skip" href="#main">跳到内容</a>
   <header class="site-header">
     <a class="brand" href="#top" aria-label="猫犬魔镜，回到顶部"><span class="brand-mark">◈</span><span>PetMirror <b>猫犬魔镜</b></span></a>
-    <nav aria-label="页面导航"><a href="./ar/">AR 眼镜端</a><a href="#architecture">架构</a><a href="#evaluation">评测</a><a href="#scope">边界</a></nav>
+    <nav aria-label="页面导航"><a href="#android-proof">Android 原型</a><a href="#experience">场景体验</a><a href="#architecture">架构</a><a href="#evaluation">评测</a></nav>
     <a class="header-link" href="./mobile/">手机 H5 演示 ↗</a>
   </header>
   <main id="main">
     <section class="hero" id="top">
       <div class="hero-copy">
         <p class="eyebrow"><span class="pulse"></span> 2026 南京大学 OpenClaw 应用创新大赛 · 二等奖</p>
-        <h1>看见它的状态。<br><em>知道此刻怎么做。</em></h1>
-        <p class="hero-lead">面向新手养宠者的 AR 照护提示原型。眼镜负责当下的两行建议，手机负责宠物档案和长期照护记录。</p>
-        <div class="hero-actions"><a class="button primary" href="./mobile/">打开手机 H5 <span>↗</span></a><a class="button secondary" href="./ar/">打开眼镜端模拟 ↗</a><a class="button secondary" href="#evaluation">查看评测依据</a></div>
-        <p class="hero-note">本页为交互式样例回放，无实时模型调用。真机采集、声音识别和视觉个体识别尚未完成验证。</p>
+        <h1>看见它的状态<br><em>知道此刻怎么做</em></h1>
+        <p class="hero-lead">面向新手养宠者的 AR 照护提示原型。Android Studio 搭建双目显示端，手机 H5 管理档案和照护记录，统一后端连接两种界面。</p>
+        <div class="hero-actions"><a class="button primary" href="./mobile/">打开手机 H5 <span>↗</span></a><a class="button secondary" href="./ar/">体验眼镜端回放 ↗</a><a class="button secondary" href="#android-proof">看 Android 原型 ↗</a></div>
+        <p class="hero-note">本页为交互式样例回放，无实时模型调用。</p>
       </div>
       <div class="hero-visual" aria-label="猫犬魔镜 AR 提示示意">
         <div class="visual-grid"></div>
@@ -38,6 +38,14 @@
       <div><span class="strip-number">01</span><h2>当下提示</h2><p>用短状态和行动建议减少现场查找。</p></div>
       <div><span class="strip-number">02</span><h2>个体记忆</h2><p>把候选观察筛入今日记录，再沉淀为长期照护记录。</p></div>
       <div><span class="strip-number">03</span><h2>审慎判断</h2><p>区分看见的证据、可能的状态与风险边界。</p></div>
+    </section>
+
+    <section class="section android-proof" id="android-proof">
+      <div class="section-heading"><div><p class="section-kicker">ANDROID PROTOTYPE</p><h2>眼镜端有 Android 原型</h2></div><p>赛期在 Android Studio 中搭建双目提示界面，并在 Pixel 7 模拟器里显示。下方是项目 PPT 保留的实际开发截图。</p></div>
+      <div class="proof-layout">
+        <figure class="proof-shot"><div class="proof-shot-top"><span><i></i> Android Studio · Pixel 7 Emulator</span><span>开发截图</span></div><a href="./android-studio-proof.svg" target="_blank" rel="noopener" aria-label="放大查看 Android Studio 开发截图"><img src="./android-studio-proof.svg" alt="Android Studio 中运行的 Pixel 7 模拟器截图，画面中央显示猫犬魔镜双目提示界面" loading="lazy"></a><figcaption>模拟器中的双目显示画面 · 点击放大</figcaption></figure>
+        <div class="proof-details"><div class="proof-icon" aria-hidden="true">◎</div><p class="proof-label">从工程到演示</p><h3>双目显示、镜腿交互、后端提示读取</h3><p>Android 工程包含左右眼同步更新的状态卡片、镜腿点击与滑动交互，以及读取统一后端最新提示的代码。网页端把这套显示逻辑做成了可直接打开的交互回放。</p><div class="proof-links"><a href="https://github.com/ymg-glitch/petmirror-ar/tree/main/android-ar">查看 Android 源码 ↗</a><a href="./ar/">体验眼镜端回放 ↗</a></div><small>截图展示的是 Android 模拟器运行结果，非真机画面。</small></div>
+      </div>
     </section>
 
     <section class="section experience" id="experience">
@@ -62,15 +70,12 @@
       </div>
     </section>
 
-    <section class="section architecture" id="architecture"><div class="section-heading"><div><p class="section-kicker">SYSTEM DESIGN</p><h2>一条链路，两种界面</h2></div><p>后端已实现接口和记录路径；真实眼镜采集与 PetFace 视觉个体识别属于下一阶段。</p></div><div class="flow"><div><span>01</span><strong>观察输入</strong><small>赛期使用图片或模拟 AR 数据</small></div><b>→</b><div><span>02</span><strong>身份与记忆</strong><small>占位身份路由＋档案记录</small></div><b>→</b><div><span>03</span><strong>视觉状态与建议</strong><small>证据、风险、行动分开</small></div><b>→</b><div><span>04</span><strong>AR 两行提示</strong><small>状态短语＋下一步动作</small></div><b>→</b><div><span>05</span><strong>记忆写回</strong><small>候选 → 今日 → 长期记录</small></div></div><div class="architecture-note"><span>眼镜端</span> 此刻怎么做 <i></i><span>手机端</span> 事后回看与编辑</div></section>
+    <section class="section architecture" id="architecture"><div class="section-heading"><div><p class="section-kicker">SYSTEM DESIGN</p><h2>一条链路，两种界面</h2></div><p>统一后端已有提示接口与记录路径。眼镜端负责当下的简短提示，手机端负责回看、编辑和长期照护信息。</p></div><div class="flow"><div><span>01</span><strong>观察输入</strong><small>赛期使用图片或模拟 AR 数据</small></div><b>→</b><div><span>02</span><strong>身份与记忆</strong><small>占位身份路由＋档案记录</small></div><b>→</b><div><span>03</span><strong>视觉状态与建议</strong><small>证据、风险、行动分开</small></div><b>→</b><div><span>04</span><strong>AR 两行提示</strong><small>状态短语＋下一步动作</small></div><b>→</b><div><span>05</span><strong>记忆写回</strong><small>候选 → 今日 → 长期记录</small></div></div><div class="architecture-note"><span>眼镜端</span> 此刻怎么做 <i></i><span>手机端</span> 事后回看与编辑</div></section>
 
-    <section class="section evaluation" id="evaluation"><div class="section-heading"><div><p class="section-kicker">EVALUATION</p><h2>把输出拿来打分</h2></div><p>30 张日常猫犬图片、17 项指标、单人 1–5 分人工评分。分数描述这套样例上的文字链路质量，不是现实场景识别准确率。</p></div><div class="evaluation-layout"><div class="score-main"><span>综合均分</span><strong>4.93 <small>/ 5</small></strong><p>视觉证据 → 状态判断 → 风险与建议 → AR 两行提示</p><div class="score-stats"><div><b>30</b><span>静态图片</span></div><div><b>17</b><span>二级指标</span></div><div><b>7</b><span>≤3 分指标点</span></div></div></div><div class="score-bars"><div><span>视觉证据 A</span><b>4.96</b><i style="--score:99.2%"></i></div><div><span>状态判断 B</span><b>4.92</b><i style="--score:98.4%"></i></div><div><span>风险边界 D</span><b>4.89</b><i style="--score:97.8%"></i></div><div><span>行动建议 E</span><b>4.93</b><i style="--score:98.6%"></i></div><div><span>AR 提示 F</span><b>4.97</b><i style="--score:99.4%"></i></div></div></div><div class="bad-case"><div><span>保留的 Bad Case</span><h3>短句压缩仍需改进</h3><p>样例 05 的行动句“轻声叫开离窗一点”不通顺，F3 得 2 分。问题定位在 AR 短句表达；已有修复方向，尚未完成修复后复测。</p></div><a href="#scope">查看能力边界 ↗</a></div></section>
-
-    <section class="section scope" id="scope"><div class="section-heading"><div><p class="section-kicker">HONEST SCOPE</p><h2>这个原型证明了什么</h2></div></div><div class="scope-grid"><div class="scope-done"><span>已有实现与证据</span><ul><li>Android 模拟器中的双目 AR 显示界面</li><li>可运行的手机 H5 与统一后端</li><li>候选池、今日记录到长期记录的 demo 数据路径</li><li>30 图单人评测与 Bad Case 记录</li></ul></div><div class="scope-next"><span>需要专项验证</span><ul><li>RayNeo 真机采集、佩戴可读性与端到端延迟</li><li>声音输入和宠物端双向反馈</li><li>PetFace 视觉个体识别及复杂长期记忆调用</li><li>真实用户试用与多人一致性评分</li></ul></div></div></section>
+    <section class="section evaluation" id="evaluation"><div class="section-heading"><div><p class="section-kicker">EVALUATION</p><h2>把输出拿来打分</h2></div><p>30 张日常猫犬图片、17 项指标、单人 1–5 分人工评分。分数描述这套样例上的文字链路质量，不是现实场景识别准确率。</p></div><div class="evaluation-layout"><div class="score-main"><span>综合均分</span><strong>4.93 <small>/ 5</small></strong><p>视觉证据 → 状态判断 → 风险与建议 → AR 两行提示</p><div class="score-stats"><div><b>30</b><span>静态图片</span></div><div><b>17</b><span>二级指标</span></div><div><b>7</b><span>≤3 分指标点</span></div></div></div><div class="score-bars"><div><span>视觉证据 A</span><b>4.96</b><i style="--score:99.2%"></i></div><div><span>状态判断 B</span><b>4.92</b><i style="--score:98.4%"></i></div><div><span>风险边界 D</span><b>4.89</b><i style="--score:97.8%"></i></div><div><span>行动建议 E</span><b>4.93</b><i style="--score:98.6%"></i></div><div><span>AR 提示 F</span><b>4.97</b><i style="--score:99.4%"></i></div></div></div><div class="bad-case"><div><span>保留的 Bad Case</span><h3>短句压缩仍需改进</h3><p>样例 05 的行动句“轻声叫开离窗一点”不通顺，F3 得 2 分。问题定位在 AR 短句表达；已有修复方向，尚未完成修复后复测。</p></div><a href="https://github.com/ymg-glitch/petmirror-ar/blob/main/EVALUATION.md">查看评测记录 ↗</a></div></section>
 
     <section class="section source" id="source"><div><p class="section-kicker">OPEN SOURCE</p><h2>查看实现，复现本地原型</h2><p>公开仓库包含精选的 H5、统一后端和 AR 显示源码。厂商 SDK、第三方评测图片与模型权重不在仓库中。</p></div><a class="button primary" id="repo-link-bottom" href="#source">打开 GitHub 仓库 ↗</a></section>
   </main>
   <footer><span>© 2026 PetMirror · 猫犬魔镜</span><span>南京大学 OpenClaw 应用创新大赛项目 · 本站为原型展示</span></footer>
 </body>
 </html>
-
