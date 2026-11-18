@@ -4,7 +4,7 @@
 
 > 南京大学 2026 OpenClaw 应用创新大赛二等奖项目。比赛平台在开发期间无法正常执行指令，经主办方允许后，原型主要借助其他 AI Agent 工具在本地完成。此仓库不依赖 OpenClaw 运行时。
 
-**[项目展示首页](https://ymg-glitch.github.io/petmirror-ar/)** · **[手机 H5 演示](https://ymg-glitch.github.io/petmirror-ar/mobile/)** · **[AR 眼镜端模拟](https://ymg-glitch.github.io/petmirror-ar/ar/)** · [架构](./ARCHITECTURE.md) · [评测](./EVALUATION.md)
+**[项目展示首页](https://ymg-glitch.github.io/petmirror-ar/)** · **[手机 H5 演示](https://ymg-glitch.github.io/petmirror-ar/mobile/)** · **[Android 原型与双目回放](https://ymg-glitch.github.io/petmirror-ar/ar/)** · [架构](./ARCHITECTURE.md) · [评测](./EVALUATION.md)
 
 现场展示可参考[本地投屏说明](./LOCAL_DEMO.md)，Windows 可使用 `start-local-demo.cmd` 启动后端与 H5。
 
