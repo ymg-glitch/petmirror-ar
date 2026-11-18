@@ -10,6 +10,8 @@
 
 ![猫犬魔镜在线展示页预览](./docs/preview.svg)
 
+[Android Studio 双目原型开发截图](./docs/android-studio-proof.svg)取自赛期决赛 PPT，画面显示 Pixel 7 模拟器中的双目提示界面。工程源码位于 [`android-ar/`](./android-ar/)。
+
 在线页是静态交互展示，**不调用摄像头、麦克风或在线 AI**。本地后端可运行；未配置云端模型时会使用明确标记的 mock 推理。
 
 [手机 H5 在线版](https://ymg-glitch.github.io/petmirror-ar/mobile/)复用实际 H5 页面代码，使用虚构数据；切换和编辑只保留在当前浏览器会话，刷新即重置。需要持久化和后端接口时请按下文在本地运行。
@@ -87,9 +89,8 @@ LICENSE
 
 ## 公开范围
 
-仓库只授权本仓库的原创代码与文档。厂商 MercurySDK AAR、开源模型权重、第三方宠物照片、比赛团队 PPT 和完整原始评测图片不随仓库发布。静态页的动物图形是仓库内 SVG 代码绘制的示意，不属于正式评测样例。原评测照片来源为 Flickr/LoremFlickr 或 PxHere 候选图，公开使用需逐张确认授权。
+仓库只授权本仓库的原创代码与文档。厂商 MercurySDK AAR、开源模型权重、第三方宠物照片、比赛团队 PPT 和完整原始评测图片不随仓库发布；仅摘取团队 PPT 中的 Android Studio 开发截图作为原型证据。静态页的动物图形是仓库内 SVG 代码绘制的示意，不属于正式评测样例。原评测照片来源为 Flickr/LoremFlickr 或 PxHere 候选图，公开使用需逐张确认授权。
 
 ## 许可
 
 本仓库原创代码与文档使用 [MIT License](./LICENSE)。第三方组件和素材遵循各自许可，不包含在该授权中。
-
