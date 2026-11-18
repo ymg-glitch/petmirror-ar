@@ -278,9 +278,11 @@ letter-spacing:.08em;
 color:#b5d9d0}
 .proof-shot-top span:first-child{display:flex;align-items:center;gap:8px}
 .proof-shot-top i{width:7px;height:7px;border-radius:50%;background:#6ce1bd;box-shadow:0 0 0 5px rgba(108,225,189,.15)}
+.proof-shot a{display:block;width:100%;min-width:0}
 .proof-shot img{
 display:block;
 width:100%;
+max-width:100%;
 height:auto;
 border:1px solid rgba(150,239,213,.15);
 border-radius:12px;
