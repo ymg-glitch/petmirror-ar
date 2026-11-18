@@ -16,7 +16,7 @@
 
 [手机 H5 在线版](https://ymg-glitch.github.io/petmirror-ar/mobile/)复用实际 H5 页面代码，使用虚构数据；切换和编辑只保留在当前浏览器会话，刷新即重置。需要持久化和后端接口时请按下文在本地运行。
 
-[AR 眼镜端在线版](https://ymg-glitch.github.io/petmirror-ar/ar/)按 Android 显示设计重现双目、低遮挡、两行提示，并提供场景切换；它是浏览器回放，不是真实眼镜画面。
+[AR 眼镜端在线版](https://ymg-glitch.github.io/petmirror-ar/ar/)先展示赛期 Android Studio 与 Pixel 7 模拟器开发截图，再提供双目场景切换。场景照片由 AI 生成，提示为预录文案；该页是浏览器回放，不是真实眼镜画面。
 
 仓库中的宠物名称、体重、行为、纪念档案和照护记录均为**虚构演示数据**，不对应真实宠物或主人。在线页另用简化样例回放展示交互。
 
@@ -89,7 +89,7 @@ LICENSE
 
 ## 公开范围
 
-仓库只授权本仓库的原创代码与文档。厂商 MercurySDK AAR、开源模型权重、第三方宠物照片、比赛团队 PPT 和完整原始评测图片不随仓库发布；仅摘取团队 PPT 中的 Android Studio 开发截图作为原型证据。静态页的动物图形是仓库内 SVG 代码绘制的示意，不属于正式评测样例。原评测照片来源为 Flickr/LoremFlickr 或 PxHere 候选图，公开使用需逐张确认授权。
+仓库只授权本仓库的原创代码与文档。厂商 MercurySDK AAR、开源模型权重、第三方宠物照片、比赛团队 PPT 和完整原始评测图片不随仓库发布；仅摘取团队 PPT 中的 Android Studio 开发截图作为原型证据。首页和眼镜端回放使用 AI 生成的虚构场景图，不属于正式评测样例，也不是硬件实拍。原评测照片来源为 Flickr/LoremFlickr 或 PxHere 候选图，公开使用需逐张确认授权。
 
 ## 许可
 
