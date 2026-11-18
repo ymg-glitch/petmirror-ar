@@ -5,8 +5,8 @@
   <rect x="58" y="52" width="46" height="46" rx="13" fill="#b7ecc6"/><text x="81" y="84" font-family="Arial,sans-serif" text-anchor="middle" font-size="32" fill="#123d2b">◈</text>
   <text x="120" y="82" font-family="Arial,'Microsoft YaHei',sans-serif" font-size="29" font-weight="700" fill="#f5fff6">PetMirror <tspan font-size="20">猫犬魔镜</tspan></text>
   <text x="66" y="195" font-family="Arial,'Microsoft YaHei',sans-serif" font-size="15" font-weight="700" letter-spacing="4" fill="#91d9aa">新手养宠 · AR 照护提示原型</text>
-  <text x="58" y="288" font-family="Arial,'Microsoft YaHei',sans-serif" font-size="60" font-weight="700" fill="#ffffff">看见它的状态。</text>
-  <text x="58" y="371" font-family="Arial,'Microsoft YaHei',sans-serif" font-size="60" font-weight="700" fill="#a8edbd">知道此刻怎么做。</text>
+  <text x="58" y="288" font-family="Arial,'Microsoft YaHei',sans-serif" font-size="60" font-weight="700" fill="#ffffff">看见它的状态</text>
+  <text x="58" y="371" font-family="Arial,'Microsoft YaHei',sans-serif" font-size="60" font-weight="700" fill="#a8edbd">知道此刻怎么做</text>
   <text x="65" y="439" font-family="Arial,'Microsoft YaHei',sans-serif" font-size="21" fill="#d6e9dc">AR 两行提示 · 手机长期记忆 · 后端记录写回</text>
   <rect x="65" y="493" width="384" height="59" rx="15" fill="#b7ecc6"/><text x="257" y="532" font-family="Arial,'Microsoft YaHei',sans-serif" text-anchor="middle" font-size="20" font-weight="700" fill="#143d2b">30 图人工评测  4.93 / 5</text>
   <rect x="700" y="65" width="435" height="500" rx="29" fill="#294c3a" stroke="#80ae88" stroke-width="2"/>
