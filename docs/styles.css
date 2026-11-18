@@ -669,6 +669,33 @@ grid-column:1/-1;
 height:9px;
 background:linear-gradient(to right,#39aa70 var(--score),#e4eee6 var(--score));
 border-radius:10px}
+.evaluation-insights{
+display:grid;
+grid-template-columns:repeat(3,minmax(0,1fr));
+gap:16px;
+margin-top:18px}
+.evaluation-insights>div{
+min-width:0;
+padding:22px 24px;
+border:1px solid var(--line);
+border-radius:17px;
+background:#edf5ee}
+.evaluation-insights span{
+display:block;
+font-size:12px;
+font-weight:800;
+color:#42735a}
+.evaluation-insights strong{
+display:block;
+margin:9px 0 3px;
+font-size:35px;
+line-height:1.15;
+letter-spacing:-.05em;
+color:#174d36}
+.evaluation-insights strong small{font-size:18px;letter-spacing:0;color:#70917d}
+.evaluation-insights p{font-size:12px;color:#5d7566;line-height:1.65;margin:0}
+.evaluation-method{margin:18px 0 0;color:#667d6e;font-size:12px}
+.evaluation-method a{color:#167858;font-weight:800;text-decoration:underline;text-underline-offset:3px}
 .bad-case{
 margin-top:22px;
 background:#fff;
@@ -752,6 +779,7 @@ display:none}
 }
 
 @media(max-width:760px){
+.evaluation-insights{grid-template-columns:1fr}
 .proof-details{padding:24px}
 .proof-shot-top{font-size:9px}
 .site-header{
